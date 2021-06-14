@@ -1,0 +1,36 @@
+{
+	"name": "cypress",
+	"version": "1.0.0",
+	"description": "cypress",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"test:chrome": "cypress run --browser chrome --env environment=dev",
+		"test:debug": "cypress open --browser chrome --env environment=dev",
+		"test:headless": "cypress run --headless chrome --env environment=dev",
+		"report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+		"report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+	},
+	"author": "",
+	"license": "General",
+	"devDependencies": {
+		"@4tw/cypress-drag-drop": "^1.6.0",
+		"chai": "^4.2.0",
+		"cypress": "^6.5.0",
+		"cypress-file-upload": "^5.0.3",
+		"cypress-iframe": "^1.0.1",
+		"cypress-multi-reporters": "^1.5.0",
+		"eslint-plugin-cypress": "^2.11.2",
+		"mocha": "^8.2.1",
+		"mocha-junit-reporter": "^1.23.3",
+		"mochawesome": "^6.2.1",
+		"mochawesome-merge": "^4.0.2",
+		"mochawesome-report-generator": "^4.1.0"
+	},
+	"dependencies": {
+		"@types/cypress": "^1.1.3",
+		"cypress-downloadfile": "^1.2.0",
+		"date": "^1.0.2",
+		"moment": "^2.29.1"
+	}
+}
