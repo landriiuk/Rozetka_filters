@@ -1,5 +1,5 @@
 {
-  "baseUrl": "here should be base url",
+  "baseUrl": "https://rozetka.com.ua/ua/",
   "defaultCommandTimeout": 50000,
   "chromeWebSecurity": false,
   "pageLoadTimeout": 110000,
